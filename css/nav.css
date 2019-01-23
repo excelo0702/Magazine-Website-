@@ -1,0 +1,149 @@
+
+    .circle {
+            vertical-align: middle;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+.nav{top:0;
+        position:sticky;
+        opacity: 0.8;
+    overflow:visible;}
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0px;
+            background-color:white;
+            overflow:inherit;
+            font-size: 20px;
+            font-family:monospace;
+            
+}
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  
+}
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 17px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: black;
+}
+
+ul li a:hover { background-color:#757575;
+    color:white;
+}
+        li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background-color:#909090;opacity: 0.9;color:white;}
+
+li:hover li a:hover { background:#757575;
+color:white;
+}
+
+.main-navigation li ul li { border-top: 0; }
+        ul ul ul {
+  left: 100%;
+  top: 0;
+}
+    ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+.right{
+        float: right;
+        
+        
+      
+    }
+.btn2{
+    background-color:white;
+    color:black;
+    padding: 17px 17px;
+    margin-top: 0px 0px ;
+    font-family: monospace;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn2:hover{
+    background-color:#909090;
+    color: white;
+    
+}
+.parallax {
+    /* The image used */
+    background-image: url("30.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+            
+            
+}
+.home{
+            padding-bottom: 30%;
+            padding-top: 25%;
+            padding-left: 15%;
+            opacity:3;
+            font-size:35px;
+            color:black
+            font-family:cursive;
+}
+
+@media screen and (max-width: 600px) {
+    ul li {
+        float: none;
+        width: 100%;
+    }
+    .nav{
+        position:static;
+    }
+    .video1{
+        margin-left:10px;
+    }
+     .video1 iframe{
+        width:100%;
+            height:200px;
+    }
+    .right{
+        float:left;
+    }
+    
+    .sub input[type=submit],.sub input[type=email]{
+        width:80%;
+        margin:2px;
+    }
+    .E1{
+    padding:0px 200px;
+    width:100%;
+        margin-left: 0px;
+    }
+    .E3{
+    padding:0px 200px;
+    width:100%;
+    }
+        .E2{
+    padding:0px 200px;
+    width:100%;
+    }
+}
+
